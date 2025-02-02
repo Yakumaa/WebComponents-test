@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow DOM</title>
+  <script src="shadow_dom.js" defer></script>
+</head>
+<body>
+  
+  <template id="my-element">
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </template>
+
+  <div id="host"></div>
+  <span>I'm not in the shadow DOM</span>
+  <br>
+
+  <button id="upper" type="button">Uppercase</button>
+  <button id="reload" type="button">Reload</button>
+</body>
+</html>
